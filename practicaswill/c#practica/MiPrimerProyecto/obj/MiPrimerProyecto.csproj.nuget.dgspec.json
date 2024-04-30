@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WILLIAM ARIAS\\Desktop\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj": {}
+    "C:\\Users\\WILLIAM ARIAS\\Desktop\\william\\Mis-proyectos\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WILLIAM ARIAS\\Desktop\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj": {
+    "C:\\Users\\WILLIAM ARIAS\\Desktop\\william\\Mis-proyectos\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WILLIAM ARIAS\\Desktop\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj",
+        "projectUniqueName": "C:\\Users\\WILLIAM ARIAS\\Desktop\\william\\Mis-proyectos\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj",
         "projectName": "MiPrimerProyecto",
-        "projectPath": "C:\\Users\\WILLIAM ARIAS\\Desktop\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj",
+        "projectPath": "C:\\Users\\WILLIAM ARIAS\\Desktop\\william\\Mis-proyectos\\practicaswill\\c#practica\\MiPrimerProyecto\\MiPrimerProyecto.csproj",
         "packagesPath": "C:\\Users\\WILLIAM ARIAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WILLIAM ARIAS\\Desktop\\practicaswill\\c#practica\\MiPrimerProyecto\\obj\\",
+        "outputPath": "C:\\Users\\WILLIAM ARIAS\\Desktop\\william\\Mis-proyectos\\practicaswill\\c#practica\\MiPrimerProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\WILLIAM ARIAS\\AppData\\Roaming\\NuGet\\NuGet.Config"
