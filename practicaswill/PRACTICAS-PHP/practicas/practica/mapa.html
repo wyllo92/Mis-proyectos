@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapa-sismos</title>
+    <!-- Se enlaza al archivo CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Se enlaza al archivo JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+        #map {
+
+            height: 500px;
+            width: 35%;
+            margin: auto;
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+        html {
+            --s: 45px;
+            /* control the size */
+            --c1: #0B2E59;
+            --c2: #0D6759;
+
+            background:
+                conic-gradient(at 25% 25%, #0000 75%, var(--c1) 0) var(--s) var(--s),
+                repeating-conic-gradient(at 25% 25%, var(--c1) 0 25%, var(--c2) 0 50%);
+            background-size: calc(2*var(--s)) calc(2*var(--s));
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="position: absolute; width: 100%; margin: auto; ">
+        <h1 style="font-size: 4em; text-align: center; color: white">sismos de Hoy</h1>
+
+        <div style="border: 3px solid rgba(255, 99, 71, 0.5); border-radius: 5px" id="map"></div>
+    </div>
+
+    <script>
+
+        var map = L.map('map').setView([4.570868, -74.297333], 5);
+
+        L.tileLayer('https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=65885b977e8e4b05b4341ee04f13b34b', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">'
+                + 'OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://www.thunderforest.com/">'
+                + 'Thunderforest</a>'
+        }).addTo(map);
+
+
+        function addCircle(sismos) {
+            for (const sismo of sismos) {
+                var circle = L.circle([sismo.latitud, sismo.longitud], {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 10000
+                }).addTo(map);
+        
+                circle.on('mouseover', function (e) {
+                    var popup = L.popup()
+                        .setLatLng(e.latlng)
+                        .setContent("Nota: " + sismo.link)
+                        .openOn(map);
+                });
+        
+                circle.on('mouseout', function () {
+                    map.closePopup();
+                });
+        
+                circle.on('click', function () {
+                    window.location.href = sismo.link;
+                });
+            }
+        }
+        
+
+        const Url = "https://filesstaticpulzo.s3.us-west-2.amazonaws.com/pulzo-dev/jsons/sismos/mapa-sismos.json";
+
+        fetch(Url)
+            .then(response => response.json()).then(data => {
+                addCircle(data.data);
+            }).catch(error => {
+                console.error(error);
+            });
+
+    </script>
+
+</body>
+
+</html>

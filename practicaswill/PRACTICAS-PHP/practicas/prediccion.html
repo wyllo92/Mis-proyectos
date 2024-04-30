@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    background-color: darkcyan;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: grid;
+    justify-content: center;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <h1>predicciones</h1>
+
+    <form id="formularioResultados">
+      <!-- Primer partido -->
+      <div>
+        <label for="partido1">${partidos[0].local.nombre} vs ${partidos[0].visitante.nombre}</label>
+        <input type="number" id="resultado1Local" name="resultado1Local" placeholder="Local">
+        <span> - </span>
+        <input type="number" id="resultado1Visitante" name="resultado1Visitante" placeholder="Visitante">
+      </div>
+      <!-- Segundo partido -->
+      <div>
+        <label for="partido2">${partidos[1].local.nombre} vs ${partidos[1].visitante.nombre}</label>
+        <input type="number" id="resultado2Local" name="resultado2Local" placeholder="Local">
+        <span> - </span>
+        <input type="number" id="resultado2Visitante" name="resultado2Visitante" placeholder="Visitante">
+      </div>
+      <!-- Y así sucesivamente para los otros partidos -->
+
+      <!-- Botón para enviar los resultados -->
+      <button type="submit">Enviar Resultados</button>
+    </form>
+
+    <div>
+      <div style="display: flex; justify-content:center">
+        <label>Argentina <input id="resultado1Local" name="resultado1Local" type="number"></label>
+        <span> - </span>
+        <label><input type="number"> equipo 2</label>
+      </div>
+      <div style="display: flex; justify-content:center">
+        <div>equipo 1 <input type="number"></div>
+        <div><input type="number"> equipo 2</div>
+      </div>
+      <div style="display: flex; justify-content:center">
+        <div>equipo 1 <input type="number"></div>
+        <div><input type="number"> equipo 2</div>
+      </div>
+      <div style="display: flex; justify-content:center">
+        <div>equipo 1 <input type="number"></div>
+        <div><input type="number"> equipo 2</div>
+      </div>
+      <div style="display: flex; justify-content:center">
+        <div>equipo 1 <input type="number"></div>
+        <div><input type="number"> equipo 2</div>
+      </div>
+      <div style="display: flex; justify-content:center">
+        <div>equipo 1 <input type="number"></div>
+        <div><input type="number"> equipo 2</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Objeto para representar un equipo
+    class Equipo {
+      constructor(nombre) {
+        this.nombre = nombre;
+        this.puntos = 0;
+        this.partidosJugados = 0;
+      }
+    }
+
+    // Objeto para representar un partido
+    class Partido {
+      constructor(local, visitante) {
+        this.local = local;
+        this.visitante = visitante;
+        this.resultadoLocal = null;
+        this.resultadoVisitante = null;
+      }
+    }
+
+    const equipos = [
+      new Equipo("argentina"),
+      new Equipo("canada"),
+      new Equipo("peru"),
+      new Equipo("chile"),
+      new Equipo("ecuador"),
+      new Equipo("venezuela"),
+      new Equipo("mexico"),
+      new Equipo("jamaica"),
+      new Equipo("estadso unidos"),
+      new Equipo("bolivia"),
+      new Equipo("uruguay"),
+      new Equipo("panama"),
+      new Equipo("colombia"),
+      new Equipo("paraguay"),
+      new Equipo("brasil"),
+      new Equipo("costa rica"),
+    ];
+
+    const partidos = [
+      new Partido(equipos[0], equipos[1]),
+      new Partido(equipos[2], equipos[3]),
+      new Partido(equipos[4], equipos[5]),
+      new Partido(equipos[6], equipos[7]),
+      new Partido(equipos[8], equipos[9]),
+      new Partido(equipos[10], equipos[11]),
+      new Partido(equipos[12], equipos[13]),
+      new Partido(equipos[14], equipos[15]),
+      new Partido(equipos[2], equipos[1]),
+      new Partido(equipos[3], equipos[0]),
+      new Partido(equipos[4], equipos[7]),
+      new Partido(equipos[5], equipos[6]),
+      new Partido(equipos[11], equipos[8]),
+      new Partido(equipos[10], equipos[9]),
+      new Partido(equipos[12], equipos[15]),
+      new Partido(equipos[13], equipos[14]),
+      new Partido(equipos[0], equipos[2]),
+      new Partido(equipos[1], equipos[3]),
+      new Partido(equipos[7], equipos[5]),
+      new Partido(equipos[6], equipos[4]),
+      new Partido(equipos[9], equipos[11]),
+      new Partido(equipos[8], equipos[10]),
+      new Partido(equipos[14], equipos[12]),
+      new Partido(equipos[15], equipos[13]),
+    ];
+
+    function calcularResultados() {
+      for (const partido of partidos) {
+        if (partido.resultadoLocal !== null && partido.resultadoVisitante !== null) {
+          if (partido.resultadoLocal > partido.resultadoVisitante) {
+            partido.local.puntos += 3;
+          } else if (partido.resultadoLocal < partido.resultadoVisitante) {
+            partido.visitante.puntos += 3;
+          } else {
+            partido.local.puntos += 1;
+            partido.visitante.puntos += 1;
+          }
+          partido.local.partidosJugados++;
+          partido.visitante.partidosJugados++;
+        }
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+﻿Fecha,url,Plataforma,Performance,Accesibility,Best Practices,SEO,First Contentful Paint (FCP),Total Blocking Time (TBT),Speed Index (SI),Largest Contentful Paint (LCP),Cumulative Layout Shift (CLS),First Input Delay (FID),Interaction to Next Paint (INP),Time to First Byte (TTFB)
+2024-01-23 10:15:54,https://www.eltiempo.com/bogota/en-vivo-trancones-movilida-y-pico-y-placa-en-de-este-23-de-enero-de-2024-847335,mobile,0.33,0.75,0.52,0.91,2.8 s,"9,650 ms",14.1 s,6.3 s,0.039,0.026,38.4 s,0.663
+2024-01-23 10:16:53,https://www.eltiempo.com/bogota/en-vivo-trancones-movilida-y-pico-y-placa-en-de-este-23-de-enero-de-2024-847335,desktop,0.69,0.7,0.52,0.92,0.7 s,550 ms,2.3 s,1.3 s,0.02,0.005,7.1 s,0.376
+2024-01-24 09:45:30,https://www.eltiempo.com/bogota/incendio-en-los-cerros-orientales-reporte-minuto-a-minuto-de-la-emergencia-847724,mobile,0.37,0.62,0.48,0.84,2.3 s,"9,980 ms",18.6 s,5.4 s,0.039,0.026,410,0.659
+2024-01-24 09:46:08,https://www.eltiempo.com/bogota/incendio-en-los-cerros-orientales-reporte-minuto-a-minuto-de-la-emergencia-847724,desktop,0.62,0.64,0.52,0.83,0.6 s,490 ms,4.8 s,1.7 s,0.057,0.005,127,0.375

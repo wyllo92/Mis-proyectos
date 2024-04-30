@@ -1,0 +1,14 @@
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\bin\Debug\net8.0\MiPrimerProyecto.exe
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\bin\Debug\net8.0\MiPrimerProyecto.deps.json
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\bin\Debug\net8.0\MiPrimerProyecto.runtimeconfig.json
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\bin\Debug\net8.0\MiPrimerProyecto.dll
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\bin\Debug\net8.0\MiPrimerProyecto.pdb
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.AssemblyInfoInputs.cache
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.AssemblyInfo.cs
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.csproj.CoreCompileInputs.cache
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.dll
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\refint\MiPrimerProyecto.dll
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.pdb
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\MiPrimerProyecto.genruntimeconfig.cache
+C:\Users\WILLIAM ARIAS\Desktop\practicaswill\c#practica\MiPrimerProyecto\obj\Debug\net8.0\ref\MiPrimerProyecto.dll
