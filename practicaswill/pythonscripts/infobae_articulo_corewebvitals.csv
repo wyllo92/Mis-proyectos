@@ -1,5 +1,0 @@
-﻿Fecha,url,Plataforma,Performance,Accesibility,Best Practices,SEO,First Contentful Paint (FCP),Total Blocking Time (TBT),Speed Index (SI),Largest Contentful Paint (LCP),Cumulative Layout Shift (CLS),First Input Delay (FID),Interaction to Next Paint (INP),Time to First Byte (TTFB)
-2024-01-23 10:11:55,https://www.infobae.com/colombia/2024/01/23/incendio-en-los-cerros-orientales-de-bogota-no-han-podido-apagar-las-llamas/,mobile,0.46,0.83,0.7,0.93,2.0 s,"5,060 ms",16.4 s,4.0 s,0.001,0.022,32.0 s,0.46
-2024-01-23 10:13:07,https://www.infobae.com/colombia/2024/01/23/incendio-en-los-cerros-orientales-de-bogota-no-han-podido-apagar-las-llamas/,desktop,0.48,1.0,0.7,1.0,0.4 s,510 ms,2.8 s,5.7 s,0,0.004,6.9 s,0.309
-2024-01-24 09:39:45,https://www.infobae.com/colombia/2024/01/24/en-vivo-asi-avanzan-los-incendios-en-bogota/,mobile,0.49,0.83,0.74,0.93,1.7 s,"2,550 ms",11.2 s,3.9 s,0,0.022,209,0.461
-2024-01-24 09:41:58,https://www.infobae.com/colombia/2024/01/24/en-vivo-asi-avanzan-los-incendios-en-bogota/,desktop,0.78,1.0,0.74,1.0,0.6 s,360 ms,2.4 s,1.0 s,0,0.004,64,0.309
